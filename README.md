@@ -14,4 +14,11 @@
 
 # At this point you should be using console.log() to display the results of each round and the winner at the end.
 
+# Function 1 Get Ramdom Computer Choice
+
+# Function 2 Round Function - Prompt User for Choice , Take Computer Variable and Player Variable and return Win, Lose or Tie
+
+# Function 3 - Run Round 5x with a running score , report winner of each round and winner at the end. 
+
+
 
