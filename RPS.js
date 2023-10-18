@@ -21,21 +21,21 @@ function playround(playerSelection, computerSelection) {
         switch (playerSelection) {
 
 
-            case "rock":
+            case rock:
                 if (computerSelection = "Paper") { return "Paper beats Rock , You lose" }
                 else {
                     return "Rock beats Scissors You win!"
                 }
                 break;
 
-            case "paper":
+            case paper:
                 if (computerSelection = "Scissors") { return "Scissors beats Rock , You lose" }
                 else {
                     return "Rock beats Scissors You win!"
-
+                }
                     break;
     
-            case "scissors":
+            case scissors:
                 if (computerSelection = "Rock") { return "Rock Beats Scissors, You lose" }
                 else {
                     return "Rock beats Scissors You win!"
@@ -47,8 +47,8 @@ function playround(playerSelection, computerSelection) {
     }
 
 
-}
-}
+ }
+
 
 
 
