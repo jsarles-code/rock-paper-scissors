@@ -8,10 +8,10 @@ function getComputerChoice() {
     return computerchoice;
 }
 
-function playround() {
+function playRound() {
     let playerSelection = prompt("Rock,Paper,Scissors?");
     let computerSelection = getComputerChoice();
-     playerSelection = playerSelection.toLowerCase;
+    playerSelection = playerSelection.toLowerCase;
 
     if (computerSelection == playerSelection) {
         return "It's a draw"
@@ -21,24 +21,24 @@ function playround() {
         switch (playerSelection) {
 
 
-            case rock:
-                if (computerSelection = "Paper") { return "Paper beats Rock , You lose" }
+            case "rock":
+                if (computerSelection == "Paper") { return "Paper beats Rock , You lose" }
                 else {
-                    return "Rock beats Scissors You win!"
+                    return "Rock beats Scissors You win!";
                 }
                 break;
 
-            case paper:
-                if (computerSelection = "Scissors") { return "Scissors beats Rock , You lose" }
+            case "paper":
+                if (computerSelection == "Scissors") { return "Scissors beats Rock , You lose" }
                 else {
-                    return "Rock beats Scissors You win!"
+                    return "Rock beats Scissors You win!";
                 }
-                    break;
-    
-            case scissors:
-                if (computerSelection = "Rock") { return "Rock Beats Scissors, You lose" }
+                break;
+
+            case "scissors":
+                if (computerSelection == "Rock") { return "Rock Beats Scissors, You lose" }
                 else {
-                    return "Rock beats Scissors You win!"
+                    return "Rock beats Scissors You win!";
                 }
                 break;
 
@@ -47,4 +47,7 @@ function playround() {
     }
 
 
- }
+}
+const playerSelection = "rock";
+const computerSelection = getComputerChoice();
+console.log(playRound(playerSelection, computerSelection));
