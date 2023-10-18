@@ -11,6 +11,7 @@ function getComputerChoice() {
 function playRound() {
     let playerSelection = prompt("Rock,Paper,Scissors?");
     let computerSelection = getComputerChoice();
+    let result; 
     playerSelection = playerSelection.toLowerCase;
 
     if (computerSelection == playerSelection) {
