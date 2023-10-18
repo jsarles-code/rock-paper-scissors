@@ -14,7 +14,7 @@ function playRound() {
     playerSelection = playerSelection.toLowerCase;
 
     if (computerSelection == playerSelection) {
-        return "It's a draw"
+        return "It's a draw";
     }
 
     else {
