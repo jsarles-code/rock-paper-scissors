@@ -3,19 +3,19 @@ console.log("Hello, World!")
 function getComputerChoice() {
     let randInt = Math.floor(Math.random() * 3);
     let array = ["rock", "paper", "scissors"];
-    let computerchoice = array[randInt];
-    console.log(computerchoice);
-    return computerchoice;
+    let computerChoice = array[randInt];
+    return computerChoice;
 }
 
 function playRound() {
     let playerSelection = prompt("Rock,Paper,Scissors?");
     let computerSelection = getComputerChoice();
-    let result; 
+    let result;
     playerSelection = playerSelection.toLowerCase;
 
     if (computerSelection == playerSelection) {
-        return "It's a draw";
+        result = "It's a draw";
+        return result;
     }
 
     else {
@@ -23,14 +23,21 @@ function playRound() {
 
 
             case "rock":
-                if (computerSelection == "Paper") { return "Paper beats Rock , You lose" }
+                if (computerSelection == "Paper") {
+                    result = "Paper beats Rock , You lose";
+                    return result;
+                }
                 else {
-                    return "Rock beats Scissors You win!";
+                    result = "Rock beats Scissors You win!"; 
+                    return result;
                 }
                 break;
 
             case "paper":
-                if (computerSelection == "Scissors") { return "Scissors beats Rock , You lose" }
+                if (computerSelection == "Scissors") {
+                    result = "Scissors beats Rock , You lose";
+                    return result;  
+                }
                 else {
                     return "Rock beats Scissors You win!";
                 }
