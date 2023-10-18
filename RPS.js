@@ -28,7 +28,7 @@ function playRound() {
                     return result;
                 }
                 else {
-                    result = "Rock beats Scissors You win!"; 
+                    result = "Rock beats Scissors You win!";
                     return result;
                 }
                 break;
@@ -36,17 +36,22 @@ function playRound() {
             case "paper":
                 if (computerSelection == "Scissors") {
                     result = "Scissors beats Rock , You lose";
-                    return result;  
+                    return result;
                 }
                 else {
-                    return "Rock beats Scissors You win!";
+                    result = "Rock beats Scissors You win!";
+                    return result;
                 }
                 break;
 
             case "scissors":
-                if (computerSelection == "Rock") { return "Rock Beats Scissors, You lose" }
+                if (computerSelection == "Rock") {
+                    result = "Rock Beats Scissors, You lose";
+                    return result
+                }
                 else {
-                    return "Rock beats Scissors You win!";
+                    result = "Rock beats Scissors You win!";
+                    return result;
                 }
                 break;
 
