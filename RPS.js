@@ -8,7 +8,7 @@ function getComputerChoice() {
     return computerchoice;
 }
 
-function playround(playerSelection, computerSelection) {
+function playround() {
     let playerSelection = prompt("Rock,Paper,Scissors?");
     let computerSelection = getComputerChoice();
      playerSelection = playerSelection.toLowerCase;
@@ -48,10 +48,3 @@ function playround(playerSelection, computerSelection) {
 
 
  }
-
-
-
-
-console.log(getComputerChoice());
-
-console.log(playRound(playerSelection, computerSelection));
