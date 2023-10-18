@@ -7,11 +7,11 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-function playRound() {
-    let playerSelection = prompt("Rock,Paper,Scissors?");
-    let computerSelection = getComputerChoice();
-    let result;
+function playRound(playerSelection,computerSelection) {
+    playerSelection = prompt("Rock,Paper,Scissors?");
+    computerSelection = getComputerChoice();
     playerSelection = playerSelection.toLowerCase;
+    let result;
 
     if (computerSelection == playerSelection) {
         result = "It's a draw";
