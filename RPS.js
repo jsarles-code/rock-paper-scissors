@@ -10,56 +10,60 @@ function getComputerChoice() {
 function playRound(playerSelection, computerSelection) {
     //playerSelection = prompt("Rock,Paper,Scissors?");
     computerSelection = getComputerChoice();
-   // playerSelection = playerSelection.toLowerCase;
-    let result;
-
-    if (computerSelection == playerSelection) {
-        result = "It's a draw";
-        return result;
-    }
-
-    else {
-        switch (playerSelection) {
-
-
-            case "rock":
-                if (computerSelection == "Paper") {
-                    result = "Paper beats Rock , You lose";
-                    return result;
-                }
-                else {
-                    result = "Rock beats Scissors You win!";
-                    return result;
-                }
-                break;
-
-            case "paper":
-                if (computerSelection == "Scissors") {
-                    result = "Scissors beats Rock , You lose";
-                    return result;
-                }
-                else {
-                    result = "Rock beats Scissors You win!";
-                    return result;
-                }
-                break;
-
-            case "scissors":
-                if (computerSelection == "Rock") {
-                    result = "Rock Beats Scissors, You lose";
-                    return result
-                }
-                else {
-                    result = "Rock beats Scissors You win!";
-                    return result;
-                }
-                break;
-
-        }
-
-    }
-
-
+   
 }
 
 console.log(playRound());
+
+
+// playerSelection = playerSelection.toLowerCase;
+   // let result;
+
+    //if (computerSelection == playerSelection) {
+      //  result = "It's a draw";
+        //return result;
+    //}
+
+    //else {
+      //  switch (playerSelection) {
+
+
+        //    case "rock":
+          //      if (computerSelection == "Paper") {
+            //        result = "Paper beats Rock , You lose";
+              //      return result;
+                //}
+                //else {
+                   // result = "Rock beats Scissors You win!";
+                    //return result;
+                //}
+                //break;
+
+            //case "paper":
+              //  if (computerSelection == "Scissors") {
+                //    result = "Scissors beats Rock , You lose";
+                  //  return result;
+                //}
+                //else {
+                  //  result = "Rock beats Scissors You win!";
+                    //return result;
+                //}
+                //break;
+
+            //case "scissors":
+              //  if (computerSelection == "Rock") {
+                //    result = "Rock Beats Scissors, You lose";
+                  //  return result
+                //}
+                //else {
+                  //  result = "Rock beats Scissors You win!";
+                    //return result;
+                //}
+                //break;
+
+        //}
+
+    //}
+
+
+//}
