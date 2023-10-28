@@ -60,6 +60,22 @@ function game(){
     let computerSelection =getComputerChoice()
     let playerSelection = prompt().toLowerCase();
     console.log(playRound(playerSelection,computerSelection))    
+     //2
+    computerSelection =getComputerChoice()
+     playerSelection = prompt().toLowerCase();
+    console.log(playRound(playerSelection,computerSelection)) 
+//3
+    computerSelection =getComputerChoice()
+    playerSelection = prompt().toLowerCase();
+   console.log(playRound(playerSelection,computerSelection)) 
+//4
+   computerSelection =getComputerChoice()
+   playerSelection = prompt().toLowerCase();
+  console.log(playRound(playerSelection,computerSelection)) 
+//5
+  computerSelection =getComputerChoice()
+     playerSelection = prompt().toLowerCase();
+    console.log(playRound(playerSelection,computerSelection)) 
 }
 (game())
 
