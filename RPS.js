@@ -58,7 +58,17 @@ function playRound(playerSelection, computerSelection) {
   }
 
 function game(){
-    
+    let playerSelection = prompt()
+    playRound()
+    playerSelection = prompt()
+    playRound()
+     playerSelection = prompt()
+    playRound()
+     playerSelection = prompt()
+    playRound()
+     playerSelection = prompt()
+    playRound()
 }
 
 // Need to keep score, repeat round function 5 times with player input, and put message at end. 
+// Need round function to function with player input. 
