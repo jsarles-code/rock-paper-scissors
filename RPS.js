@@ -60,6 +60,7 @@ function game(){
     let computerSelection =getComputerChoice()
     let playerSelection = prompt().toLowerCase();
     console.log(playRound(playerSelection,computerSelection))    
+    //if playRound() = 
      //2
     computerSelection =getComputerChoice()
      playerSelection = prompt().toLowerCase();
