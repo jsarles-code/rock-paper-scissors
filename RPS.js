@@ -8,7 +8,6 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    //playerSelection = prompt("Rock,Paper,Scissors?");
     computerSelection = getComputerChoice();
    let result;
 
@@ -58,17 +57,12 @@ function playRound(playerSelection, computerSelection) {
   }
 
 function game(){
-    let playerSelection = prompt()
-    playRound()
-    playerSelection = prompt()
-    playRound()
-     playerSelection = prompt()
-    playRound()
-     playerSelection = prompt()
-    playRound()
-     playerSelection = prompt()
-    playRound()
+    let computerSelection =getComputerChoice()
+    let playerSelection = prompt().toLowerCase();
+    console.log(playRound(playerSelection,computerSelection))    
 }
+console.log(game())
 
-// Need to keep score, repeat round function 5 times with player input, and put message at end. 
-// Need round function to function with player input. 
+// Need a variable that gets updated depending on round result. 
+// repeat round function to work with player input
+// console .log  
