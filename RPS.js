@@ -80,5 +80,7 @@ function game(){
 (game())
 
 // Need a variable that gets updated depending on round result. 
-// repeat round function to work with player input
-// console .log  
+// console .log the result
+// score variable +1 = win +0 = draw -1 for loss
+// game function needs to log the score
+
