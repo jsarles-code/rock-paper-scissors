@@ -22,7 +22,7 @@ function playRound(playerSelection, computerSelection) {
 
 
            case "rock":
-                if (computerSelection == "Paper") {
+                if (computerSelection == "paper") {
                     result = "Paper beats Rock , You lose";
                     return result;
                 }
@@ -33,7 +33,7 @@ function playRound(playerSelection, computerSelection) {
                 break;
 
             case "paper":
-                if (computerSelection == "Scissors") {
+                if (computerSelection == "scissors") {
                     result = "Scissors beats Rock , You lose";
                     return result;
                 }
@@ -44,7 +44,7 @@ function playRound(playerSelection, computerSelection) {
                 break;
 
             case "scissors":
-                if (computerSelection == "Rock") {
+                if (computerSelection == "rock") {
                     result = "Rock Beats Scissors, You lose";
                     return result
                 }
@@ -57,6 +57,6 @@ function playRound(playerSelection, computerSelection) {
     }
   }
 
-  const playerSelection = "rock";
+  const playerSelection = "paper";
   const computerSelection = getComputerChoice();
   console.log(playRound(playerSelection, computerSelection));
