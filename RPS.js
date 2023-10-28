@@ -57,6 +57,8 @@ function playRound(playerSelection, computerSelection) {
     }
   }
 
-  const playerSelection = "paper";
-  const computerSelection = getComputerChoice();
-  console.log(playRound(playerSelection, computerSelection));
+function game(){
+    
+}
+
+// Need to keep score, repeat round function 5 times with player input, and put message at end. 
