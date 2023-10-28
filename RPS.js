@@ -61,7 +61,7 @@ function game(){
     let playerSelection = prompt().toLowerCase();
     console.log(playRound(playerSelection,computerSelection))    
 }
-console.log(game())
+(game())
 
 // Need a variable that gets updated depending on round result. 
 // repeat round function to work with player input
