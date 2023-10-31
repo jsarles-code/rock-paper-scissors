@@ -9,7 +9,7 @@ function getComputerChoice() {
 
 function playRound(playerSelection, computerSelection) {
     computerSelection = getComputerChoice();
-    console.log(computerSelection)
+   // console.log(computerSelection)
    let result;
 
   if (computerSelection == playerSelection) {
@@ -67,25 +67,31 @@ function playRound(playerSelection, computerSelection) {
 function game(){
     let computerSelection =getComputerChoice()
     let playerSelection = prompt().toLowerCase();
-    console.log(playRound(playerSelection,computerSelection))    
+    let score ;
+    score = playRound(playerSelection,computerSelection)
+    console.log(score)
     //if playRound() = 
      //2
     computerSelection =getComputerChoice()
      playerSelection = prompt().toLowerCase();
-    console.log(playRound(playerSelection,computerSelection)) 
-//3
+     score = score + playRound(playerSelection,computerSelection)
+     console.log(score)
+
     computerSelection =getComputerChoice()
-    playerSelection = prompt().toLowerCase();
-   console.log(playRound(playerSelection,computerSelection)) 
-//4
-   computerSelection =getComputerChoice()
-   playerSelection = prompt().toLowerCase();
-  console.log(playRound(playerSelection,computerSelection)) 
-//5
-  computerSelection =getComputerChoice()
      playerSelection = prompt().toLowerCase();
-    console.log(playRound(playerSelection,computerSelection)) 
-}
+     score = score + playRound(playerSelection,computerSelection)
+     console.log(score)
+     
+     computerSelection =getComputerChoice()
+     playerSelection = prompt().toLowerCase();
+     score = score + playRound(playerSelection,computerSelection)
+     console.log(score)
+     
+     computerSelection =getComputerChoice()
+     playerSelection = prompt().toLowerCase();
+     score = score + playRound(playerSelection,computerSelection)
+     console.log(score)
+}     
 (game())
 
 // Need a variable that gets updated depending on round result. 
