@@ -12,7 +12,8 @@ function playRound(playerSelection, computerSelection) {
    let result;
 
   if (computerSelection == playerSelection) {
-        result = "It's a draw";
+        //result = "It's a draw";
+        result = 0
         return result;
     }
 
@@ -84,4 +85,5 @@ function game(){
 // console .log the result
 // score variable +1 = win +0 = draw -1 for loss
 // game function needs to log the score
-
+// return a number 
+// game returns a string if we get the number
