@@ -67,15 +67,7 @@ function game() {
     let computerSelection = getComputerChoice()
     let playerSelection = prompt().toLowerCase();
     let score;
-    score = playRound(playerSelection, computerSelection)
-    console.log(score)
-    //if playRound() = 
-    //2
-    computerSelection = getComputerChoice()
-    playerSelection = prompt().toLowerCase();
-    score = score + playRound(playerSelection, computerSelection)
-    console.log(score)
-
+    
     if (score > 0) {
         winner = "You Win";
     }
