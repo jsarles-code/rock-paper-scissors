@@ -9,10 +9,11 @@ function getComputerChoice() {
 
 function playRound(playerSelection, computerSelection) {
     computerSelection = getComputerChoice();
+   // console.log(computerSelection)
    let result;
 
   if (computerSelection == playerSelection) {
-        //result = "It's a draw";
+        console.log("It's a draw");
         result = 0
         return result;
     }
@@ -23,33 +24,39 @@ function playRound(playerSelection, computerSelection) {
 
            case "rock":
                 if (computerSelection == "paper") {
-                    result = "Paper beats Rock , You lose";
+                    console.log("Paper beats Rock , You lose");
+                    result = -1
                     return result;
                 }
                 else {
-                    result = "Rock beats Scissors You win!";
+                    console.log("Rock beats Scissors You win!");
+                    result = 1
                     return result;
                 }
                 break;
 
             case "paper":
                 if (computerSelection == "scissors") {
-                    result = "Scissors beats Rock , You lose";
+                    result = -1
+                    console.log("Scissors beats Paper , You lose");
                     return result;
                 }
                 else {
-                    result = "Rock beats Scissors You win!";
+                    result = 1
+                    console.log("Paper beats Rock You win!");
                     return result;
                 }
                 break;
 
             case "scissors":
                 if (computerSelection == "rock") {
-                    result = "Rock Beats Scissors, You lose";
+                    result = -1
+                    console.log("Rock Beats Scissors, You lose");
                     return result
                 }
                 else {
-                    result = "Rock beats Scissors You win!";
+                    result = 1
+                    console.log("Scissors beats Paper You win!");
                     return result;
                 }
                 break;
@@ -60,25 +67,42 @@ function playRound(playerSelection, computerSelection) {
 function game(){
     let computerSelection =getComputerChoice()
     let playerSelection = prompt().toLowerCase();
-    console.log(playRound(playerSelection,computerSelection))    
+    let score ;
+    score = playRound(playerSelection,computerSelection)
+    console.log(score)
     //if playRound() = 
      //2
     computerSelection =getComputerChoice()
      playerSelection = prompt().toLowerCase();
-    console.log(playRound(playerSelection,computerSelection)) 
-//3
+     score = score + playRound(playerSelection,computerSelection)
+     console.log(score)
+
     computerSelection =getComputerChoice()
-    playerSelection = prompt().toLowerCase();
-   console.log(playRound(playerSelection,computerSelection)) 
-//4
-   computerSelection =getComputerChoice()
-   playerSelection = prompt().toLowerCase();
-  console.log(playRound(playerSelection,computerSelection)) 
-//5
-  computerSelection =getComputerChoice()
      playerSelection = prompt().toLowerCase();
-    console.log(playRound(playerSelection,computerSelection)) 
-}
+     score = score + playRound(playerSelection,computerSelection)
+     console.log(score)
+     
+     computerSelection =getComputerChoice()
+     playerSelection = prompt().toLowerCase();
+     score = score + playRound(playerSelection,computerSelection)
+     console.log(score)
+     
+     computerSelection =getComputerChoice()
+     playerSelection = prompt().toLowerCase();
+     score = score + playRound(playerSelection,computerSelection)
+     console.log(score)
+     if (score > 0) {
+        winner = "You Win";
+     }
+
+        else if (score < 0) {
+        winner = "You lose";
+        }
+        else {
+        winner = "Its a draw" 
+     }
+     console.log(winner)
+}     
 (game())
 
 // Need a variable that gets updated depending on round result. 
