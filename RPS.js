@@ -13,7 +13,7 @@ function playRound(playerSelection, computerSelection) {
    let result;
 
   if (computerSelection == playerSelection) {
-        //result = "It's a draw";
+        console.log("It's a draw");
         result = 0
         return result;
     }
@@ -24,12 +24,12 @@ function playRound(playerSelection, computerSelection) {
 
            case "rock":
                 if (computerSelection == "paper") {
-                    //result = "Paper beats Rock , You lose";
+                    console.log("Paper beats Rock , You lose");
                     result = -1
                     return result;
                 }
                 else {
-                    //result = "Rock beats Scissors You win!";
+                    console.log("Rock beats Scissors You win!");
                     result = 1
                     return result;
                 }
@@ -38,12 +38,12 @@ function playRound(playerSelection, computerSelection) {
             case "paper":
                 if (computerSelection == "scissors") {
                     result = -1
-                    //result = "Scissors beats Rock , You lose";
+                    console.log("Scissors beats Paper , You lose");
                     return result;
                 }
                 else {
                     result = 1
-                    //result = "Rock beats Scissors You win!";
+                    console.log("Paper beats Rock You win!");
                     return result;
                 }
                 break;
@@ -51,12 +51,12 @@ function playRound(playerSelection, computerSelection) {
             case "scissors":
                 if (computerSelection == "rock") {
                     result = -1
-                    //result = "Rock Beats Scissors, You lose";
+                    console.log("Rock Beats Scissors, You lose");
                     return result
                 }
                 else {
                     result = 1
-                    //result = "Rock beats Scissors You win!";
+                    console.log("Scissors beats Paper You win!");
                     return result;
                 }
                 break;
@@ -91,6 +91,17 @@ function game(){
      playerSelection = prompt().toLowerCase();
      score = score + playRound(playerSelection,computerSelection)
      console.log(score)
+     if (score > 0) {
+        winner = "You Win";
+     }
+
+        else if (score < 0) {
+        winner = "You lose";
+        }
+        else {
+        winner = "Its a draw" 
+     }
+     console.log(winner)
 }     
 (game())
 
