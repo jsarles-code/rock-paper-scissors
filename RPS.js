@@ -9,10 +9,9 @@ function getComputerChoice() {
 
 function playRound(playerSelection, computerSelection) {
     computerSelection = getComputerChoice();
-   // console.log(computerSelection)
-   let result;
+    let result;
 
-  if (computerSelection == playerSelection) {
+    if (computerSelection == playerSelection) {
         console.log("It's a draw");
         result = 0
         return result;
@@ -22,7 +21,7 @@ function playRound(playerSelection, computerSelection) {
         switch (playerSelection) {
 
 
-           case "rock":
+            case "rock":
                 if (computerSelection == "paper") {
                     console.log("Paper beats Rock , You lose");
                     result = -1
@@ -60,54 +59,54 @@ function playRound(playerSelection, computerSelection) {
                     return result;
                 }
                 break;
-}
+        }
     }
-  }
+}
 
-function game(){
-    let computerSelection =getComputerChoice()
+function game() {
+    let computerSelection = getComputerChoice()
     let playerSelection = prompt().toLowerCase();
-    let score ;
-    score = playRound(playerSelection,computerSelection)
+    let score;
+    score = playRound(playerSelection, computerSelection)
     console.log(score)
     //if playRound() = 
-     //2
-    computerSelection =getComputerChoice()
-     playerSelection = prompt().toLowerCase();
-     score = score + playRound(playerSelection,computerSelection)
-     console.log(score)
+    //2
+    computerSelection = getComputerChoice()
+    playerSelection = prompt().toLowerCase();
+    score = score + playRound(playerSelection, computerSelection)
+    console.log(score)
 
-    computerSelection =getComputerChoice()
-     playerSelection = prompt().toLowerCase();
-     score = score + playRound(playerSelection,computerSelection)
-     console.log(score)
-     
-     computerSelection =getComputerChoice()
-     playerSelection = prompt().toLowerCase();
-     score = score + playRound(playerSelection,computerSelection)
-     console.log(score)
-     
-     computerSelection =getComputerChoice()
-     playerSelection = prompt().toLowerCase();
-     score = score + playRound(playerSelection,computerSelection)
-     console.log(score)
-     if (score > 0) {
+    computerSelection = getComputerChoice()
+    playerSelection = prompt().toLowerCase();
+    score = score + playRound(playerSelection, computerSelection)
+    console.log(score)
+
+    computerSelection = getComputerChoice()
+    playerSelection = prompt().toLowerCase();
+    score = score + playRound(playerSelection, computerSelection)
+    console.log(score)
+
+    computerSelection = getComputerChoice()
+    playerSelection = prompt().toLowerCase();
+    score = score + playRound(playerSelection, computerSelection)
+    console.log(score)
+    if (score > 0) {
         winner = "You Win";
-     }
+    }
 
-        else if (score < 0) {
+    else if (score < 0) {
         winner = "You lose";
-        }
-        else {
-        winner = "Its a draw" 
-     }
-     console.log(winner)
-}     
+    }
+    else {
+        winner = "Its a draw"
+    }
+    console.log(winner)
+}
 (game())
 
-// Need a variable that gets updated depending on round result. 
+// Need a variable that gets updated depending on round result.
 // console .log the result
 // score variable +1 = win +0 = draw -1 for loss
 // game function needs to log the score
-// return a number 
+// return a number
 // game returns a string if we get the number
