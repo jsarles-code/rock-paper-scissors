@@ -1,5 +1,8 @@
 console.log("Hello, World!")
-
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', () => {
+    alert("Hello World");
+  });
 function getComputerChoice() {
     let randInt = Math.floor(Math.random() * 3);
     let array = ["rock", "paper", "scissors"];
