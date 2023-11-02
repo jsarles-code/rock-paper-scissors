@@ -1,17 +1,4 @@
 console.log("Hello, World!")
-const rock = document.querySelector('#rock');
-rock.addEventListener('click', () => {
-    alert("Hello World");
-  });
-
-  const paper = document.querySelector('#paper');
-  paper.addEventListener('click', () => {
-    alert("Hello World");
-  });
-  const scissors = document.querySelector('#scissors');
-  scissors.addEventListener('click', () => {
-    alert("Hello World");
-  });
   
 function getComputerChoice() {
     let randInt = Math.floor(Math.random() * 3);
@@ -76,7 +63,19 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
+const rock = document.querySelector('#rock');
+rock.addEventListener('click', () => {
+    alert("Hello World");
+  });
 
+  const paper = document.querySelector('#paper');
+  paper.addEventListener('click', () => {
+    alert("Hello World");
+  });
+  const scissors = document.querySelector('#scissors');
+  scissors.addEventListener('click', () => {
+    alert("Hello World");
+  });
 function game() {
     let computerSelection = getComputerChoice()
     let playerSelection = prompt().toLowerCase();
