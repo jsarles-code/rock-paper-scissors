@@ -7,8 +7,8 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-function playRound(playerSelection, computerSelection) {
-    computerSelection = getComputerChoice();
+function playRound(playerSelection) {
+    let computerSelection = getComputerChoice();
     let result;
 
     if (computerSelection == playerSelection) {
@@ -69,9 +69,9 @@ rock.addEventListener('click', () => {
   });
 
   const paper = document.querySelector('#paper');
-  paper.addEventListener('click', () => {
-    alert("Hello World");
+  paper.addEventListener('click', playRound("paper") {
   });
+
   const scissors = document.querySelector('#scissors');
   scissors.addEventListener('click', () => {
     alert("Hello World");
@@ -93,7 +93,6 @@ function game() {
     }
     console.log(winner)
 }
-(game())
 
 // Need a variable that gets updated depending on round result.
 // console .log the result
