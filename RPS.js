@@ -76,23 +76,41 @@ rock.addEventListener('click', () => {
   scissors.addEventListener('click', () => {
     alert("Hello World");
   });
-function game() {
-    let computerSelection = getComputerChoice()
-    let playerSelection = prompt().toLowerCase();
-    let score;
-    
-    if (score > 0) {
-        winner = "You Win";
-    }
 
-    else if (score < 0) {
-        winner = "You lose";
-    }
-    else {
-        winner = "Its a draw"
-    }
-    console.log(winner)
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //function game() {
+  //  let computerSelection = getComputerChoice()
+    //let playerSelection = prompt().toLowerCase();
+    //let score;
+    
+   // if (score > 0) {
+     //   winner = "You Win";
+    //}
+
+//    else if (score < 0) {
+  //      winner = "You lose";
+    //}
+    //else {
+      //  winner = "Its a draw"
+    //}
+    //console.log(winner)
+//}
 
 
 
