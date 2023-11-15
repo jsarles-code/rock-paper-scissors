@@ -93,7 +93,10 @@ function game() {
     }
     console.log(winner)
 }
-(game())
+
+
+
+//(game())
 
 // Need a variable that gets updated depending on round result.
 // console .log the result
