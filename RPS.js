@@ -64,9 +64,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 const rock = document.querySelector('#rock');
-rock.addEventListener('click', () => {
-    alert("Hello World");
-  });
+rock.addEventListener('click', playRound("rock"));
 
   const paper = document.querySelector('#paper');
   paper.addEventListener('click', () => {
