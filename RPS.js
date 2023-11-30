@@ -64,8 +64,6 @@ function playRound(playerSelection, computerSelection) {
 }
 
 
-// Create an event listener and pass the name of the buttons as a variable to the playRound function
-
 const buttons = document.querySelectorAll('button');
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
@@ -74,9 +72,8 @@ buttons.forEach((button) => {
     });
 });
 
-const buttons = document.querySelectorAll('button');
-const score = document.querySelector('#score');
-const result = document.querySelector('#result');
+//const score = document.querySelector('#score');
+//const result = document.querySelector('#result');
 let playerScore = 0;
 let computerScore = 0;
 let round = 0;
