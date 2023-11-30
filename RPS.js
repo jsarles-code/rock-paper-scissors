@@ -1,5 +1,5 @@
 console.log("Hello, World!")
-
+  
 function getComputerChoice() {
     let randInt = Math.floor(Math.random() * 3);
     let array = ["rock", "paper", "scissors"];
@@ -63,46 +63,57 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-function game() {
-    let computerSelection = getComputerChoice()
-    let playerSelection = prompt().toLowerCase();
-    let score;
-    score = playRound(playerSelection, computerSelection)
-    console.log(score)
-    //if playRound() = 
-    //2
-    computerSelection = getComputerChoice()
-    playerSelection = prompt().toLowerCase();
-    score = score + playRound(playerSelection, computerSelection)
-    console.log(score)
 
-    computerSelection = getComputerChoice()
-    playerSelection = prompt().toLowerCase();
-    score = score + playRound(playerSelection, computerSelection)
-    console.log(score)
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        console.log(button.id);
+        playRound(button.id, getComputerChoice());
+    });
+});
 
-    computerSelection = getComputerChoice()
-    playerSelection = prompt().toLowerCase();
-    score = score + playRound(playerSelection, computerSelection)
-    console.log(score)
+//const score = document.querySelector('#score');
+//const result = document.querySelector('#result');
+let playerScore = 0;
+let computerScore = 0;
+let round = 0;
 
-    computerSelection = getComputerChoice()
-    playerSelection = prompt().toLowerCase();
-    score = score + playRound(playerSelection, computerSelection)
-    console.log(score)
-    if (score > 0) {
-        winner = "You Win";
-    }
 
-    else if (score < 0) {
-        winner = "You lose";
-    }
-    else {
-        winner = "Its a draw"
-    }
-    console.log(winner)
-}
-(game())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //function game() {
+  //  let computerSelection = getComputerChoice()
+    //let playerSelection = prompt().toLowerCase();
+    //let score;
+    
+   // if (score > 0) {
+     //   winner = "You Win";
+    //}
+
+//    else if (score < 0) {
+  //      winner = "You lose";
+    //}
+    //else {
+      //  winner = "Its a draw"
+    //}
+    //console.log(winner)
+//}
+
+
+
+//(game())
 
 // Need a variable that gets updated depending on round result.
 // console .log the result
