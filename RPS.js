@@ -63,19 +63,28 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-const rock = document.querySelector('#rock');
-rock.addEventListener('click', playRound("rock"));
 
-  const paper = document.querySelector('#paper');
-  paper.addEventListener('click', () => {
-    alert("Hello World");
-  });
-  const scissors = document.querySelector('#scissors');
-  scissors.addEventListener('click', () => {
-    alert("Hello World");
-  });
+// Create an event listener and pass the name of the buttons as a variable to the playRound function
 
+<div id="container">
+    <button id="Rock">Rock</button>
+    <button id="Paper">Paper</button>
+    <button id="Scissors">Scissors</button>
+</div>
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        console.log(button.id);
+        playRound(button.id, getComputerChoice());
+    });
+});
 
+const buttons = document.querySelectorAll('button');
+const score = document.querySelector('#score');
+const result = document.querySelector('#result');
+let playerScore = 0;
+let computerScore = 0;
+let round = 0;
 
 
 
